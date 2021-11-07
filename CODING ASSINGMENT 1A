@@ -1,0 +1,64 @@
+package assignment1A;
+
+import java.util.Scanner;
+
+public class A1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner scanMe = new Scanner (System.in);
+		
+		System.out.println("Enter the number of items:");
+		double item1 = scanMe.nextDouble();
+		
+		System.out.println("Enter the price of first item:");
+	    double price1 = scanMe.nextDouble();
+	    System.out.println("Enter the quantity of first item:");
+	    int quality1 = scanMe.nextInt();
+	    double total1 = (price1 * item1);
+	    System.out.println("Price1: " + total1);
+	   
+	    System.out.println("Enter the price of second item:" );
+	    double price2 = scanMe.nextDouble();
+	    System.out.println ("Enter the quantity of second item:" );
+	    int quantity2 =scanMe.nextInt();
+	    double total2 = (price2 * quantity2);
+	    System.out.println("Price2: " + total2);
+	    
+	    System.out.println("Enter the price of third item:" );
+	    double price3 = scanMe.nextDouble();
+	    System.out.println ("Enter the quantity of third item:" );
+	    int quantity3 =scanMe.nextInt();
+	    double total3 = (price3 * quantity3);
+	    System.out.println("Price3: " + total3);
+	    
+	    double finaltotal = (total1 + total2 + total3);
+	    System.out.println("Total: " + total1);
+	    
+	
+	   
+	    if(finaltotal>100) {
+	    	double discountreceived =(finaltotal*20)/100;
+	    	double a = finaltotal - discountreceived;
+	        System.out.println ("The total price : " + finaltotal);	    
+	        System.out.println("The discount received : " + discountreceived);
+			System.out.println("The price to paid : " + a );
+			
+		}
+			else if (finaltotal > 100) {
+				double discountreceived = (finaltotal*10)/100;
+				double b = finaltotal - discountreceived;
+				System.out.println ("The total price : " + finaltotal);
+				System.out.println("The discount received : " + discountreceived);
+				System.out.println("The price to paid : " + b );
+	   
+	    
+	    
+	    
+
+	    }
+
+}
+
+}
